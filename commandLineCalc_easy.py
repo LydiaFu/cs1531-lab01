@@ -26,6 +26,15 @@ def calculate(s):
     >>> calculate(\'print("bad guy coming to hack")\')
     '''
     # TODO = fill in this function
+    
+    if 'print' in s:
+        s = ''
+    else:
+        result = eval(s)
+        if type(print(result)) == int:
+            print(result)
+    
+    
     pass
 
 if __name__ == '__main__':
