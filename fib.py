@@ -21,6 +21,26 @@ def produceFibsList(n):
     [1, 1, 2, 3, 5]
     '''
     # TODO = fill in the code here, and return the correct result using the return keyword
+    
+    i = 1
+    num = 1
+    fiblist = []
+    
+    while i <= n and i < 1:
+        i += 1 ;
+    
+    while i <= n and i < 2:
+        fiblist.append(1)
+        i +=1;
+    
+    i = 2
+    while i <= n:
+        fiblist.append(num)
+        num = fiblist[-1] + fiblist[-2]
+        i += 1
+    
+    print(fiblist)
+    
     pass
 
 if __name__ == '__main__':
